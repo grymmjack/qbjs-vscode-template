@@ -12,14 +12,15 @@ Support for browser APIs is built-in as of version 0.3.0-beta; a game engine is 
 > Enjoy! ~ grymmjack
 
 ## Setup:
-1. Clone this repo
-2. Open vscode
-3. Install the recommended extensions
-4. Restart vscode (if applicable)
-5. Open `index.bas` and start coding
-6. Press `F5` to build and preview
-7. Delete .git directory (start clean on your own)
-8. Create your own repo and push the contents there
+1. Clone the repo - `git clone https://github.com/grymmjack/qbjs-vscode-template`
+2. Delete `.git` (start clean on your own)
+3. Rename the directory you cloned into as `mv qbjs-vscode-template your-project-here`
+4. Open vscode
+5. Add your folder to workspace
+6. Install the recommended extensions (only asked one time)
+7. Restart vscode (if applicable)
+8. Open `index.bas` and start coding
+9. Press `F5` to build and preview
 
 > NOTE: index.html, index.bas, and index.js are all just placeholder names, and
 > you could use other names. If you do, make sure that if you modify index.html
