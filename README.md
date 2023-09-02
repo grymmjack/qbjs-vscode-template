@@ -8,6 +8,9 @@ Support for browser APIs is built-in as of version 0.3.0-beta; a game engine is 
 
 # About the vscode template
 
+> Template is all qbjs defaults, all I did was make it easy to get started.
+> Enjoy! ~ grymmjack
+
 ## Setup:
 1. Clone this repo
 2. Open vscode
@@ -23,6 +26,13 @@ Support for browser APIs is built-in as of version 0.3.0-beta; a game engine is 
 >
 > `index.js` is linked via `<script>` tag in the `index.html` and so if you do
 > rename that file, you will need to modify `index.html` as well.
+
+
+## To copy to online qbjs.org
+1. Zip the project
+2. Go to qbjs.org
+3. Upload the zip file to the files pane
+4. Copy contents of `index.bas` into editor
 
 
 ### If you don't have qb2js for your platform...
