@@ -4,6 +4,9 @@ QB.start(); QB.setTypeMap({ GXPOSITION:[{ name: 'x', type: 'LONG' }, { name: 'y'
     await GX.registerGameEvents(function(e){});
     QB.sub_Screen(0);
 
+   var i = 0;  /* LONG */ 
+   i =  (await QB.func__LoadImage( "qbjs-logo.png" ,    32));
+   QB.sub_Screen(  i);
    await QB.sub_Print(["Hello, World! from QBJS"]);
 QB.end();
 

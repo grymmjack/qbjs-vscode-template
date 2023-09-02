@@ -31,7 +31,7 @@ Support for browser APIs is built-in as of version 0.3.0-beta; a game engine is 
 ## To copy to online qbjs.org
 1. Zip the project
 2. Go to qbjs.org
-3. Upload the zip file to the files pane
+3. Open the zip file project with the open icon
 4. Copy contents of `index.bas` into editor
 
 
