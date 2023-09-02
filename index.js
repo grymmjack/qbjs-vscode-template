@@ -7,6 +7,7 @@ QB.start(); QB.setTypeMap({ GXPOSITION:[{ name: 'x', type: 'LONG' }, { name: 'y'
    var i = 0;  /* LONG */ 
    i =  (await QB.func__LoadImage( "qbjs-logo.png" ,    32));
    QB.sub_Screen(  i);
+   await QB.sub_Print(["foo bar!"]);
    await QB.sub_Print(["Hello, World! from QBJS"]);
 QB.end();
 
