@@ -22,12 +22,22 @@
 			"label": "Compile",
 			"dependsOn": "Remove",
 			"type": "shell",
-			"command": "${fileDirname}\\qb2js.exe",
-			"args": [
-				"${fileDirname}\\${fileBasenameNoExtension}.bas",
-				">",
-				"${fileDirname}\\${fileBasenameNoExtension}.js"
-			],
+			"windows": {
+				"command": "${fileDirname}\\qb2js.exe",
+				"args": [
+					"${fileDirname}\\${fileBasenameNoExtension}.bas",
+					">",
+					"${fileDirname}\\${fileBasenameNoExtension}.js"
+				]
+			},
+			"osx": {
+				"command": "${fileDirname}/qb2js-macos",
+				"args": [
+					"${fileDirname}/${fileBasenameNoExtension}.bas",
+					">",
+					"${fileDirname}/${fileBasenameNoExtension}.js"
+				]
+			},
 			"presentation": {
 				"reveal": "silent",
 				"panel": "shared",
@@ -37,10 +47,19 @@
 		{
 			"label": "Remove",
 			"type": "shell",
-			"command": "del",
-			"args": [
-				"${fileDirname}\\${fileBasenameNoExtension}.js"
-			],
+			"windows": {
+				"command": "del",
+				"args": [
+					"${fileDirname}\\${fileBasenameNoExtension}.js"
+				]
+			},
+			"osx": {
+				"command": "rm",
+				"args": [
+					"-f",
+					"${fileDirname}/${fileBasenameNoExtension}.js"
+				]
+			},
 			"presentation": {
 				"reveal": "never",
 				"panel": "shared",
