@@ -41,11 +41,10 @@ Support for browser APIs is built-in as of version 0.3.0-beta; a game engine is 
 ### Supported OSes:
 - Windows
 - MacOS
+- Linux
 
 ### If you don't have qb2js for your platform...
 1. Clone the qbjs repo (https://github.com/boxgaming/qbjs)
 2. Compile tools/qb2js.bas
 3. Copy the qb2js binary from tools/qb2js into root of project
 4. Modify tasks.json to use qb2js platform command
-
-> In the future I will include separate commands depending on the OS.

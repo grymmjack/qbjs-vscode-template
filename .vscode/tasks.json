@@ -38,6 +38,14 @@
 					"${fileDirname}/${fileBasenameNoExtension}.js"
 				]
 			},
+			"linux": {
+				"command": "${fileDirname}/qb2js-linux",
+				"args": [
+					"${fileDirname}/${fileBasenameNoExtension}.bas",
+					">",
+					"${fileDirname}/${fileBasenameNoExtension}.js"
+				]
+			},
 			"presentation": {
 				"reveal": "silent",
 				"panel": "shared",
@@ -54,6 +62,13 @@
 				]
 			},
 			"osx": {
+				"command": "rm",
+				"args": [
+					"-f",
+					"${fileDirname}/${fileBasenameNoExtension}.js"
+				]
+			},
+			"linux": {
 				"command": "rm",
 				"args": [
 					"-f",
